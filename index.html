@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100&display=swap" rel="stylesheet">
+
+    <title>Grade-Tracker</title>
+</head>
+
+<body>
+    <header>
+        <h1>Grades Tracker</h1>
+
+    </header>
+    <main>
+        <form id="student-Info">
+            <label for="studentName">Student Name</label>
+            <br>
+            <input type="text" name="studentName" id="studentName">
+
+
+            <label for="course">Course</label>
+            <br>
+            <br>
+            <!-- <div class="dropdown">
+                <button onclick="myFunction()" class="dropbtn">Dropdown</button>
+                <div id="myDropdown" class="dropdown-content">
+                  <a href="#">Math</a>
+                  <a href="#">English</a>
+                  <a href="#">Arabic</a>
+                </div>
+              </div> -->
+            <select class="course" name="course">
+                <option value="math">Math</option>
+                <option value="english">English</option>
+                <option value="arabic">Arabic</option>
+                <option value="art">Art</option>
+                <option value="science">Science</option>
+            </select>
+            <input type="submit" id="submit">
+
+
+
+        </form>
+
+
+        <section id=studentTable>
+
+            <table id="Table">
+                <th>
+                    <td>Student Name</td>
+                    <td>Student Grade</td>
+                    <td>Course</td>
+                    <td>Status</td>
+                </th>
+            </table>
+
+        </section>
+
+
+    </main>
+    <footer>
+
+
+    </footer>
+
+</body>
+<script src="js/app.js"></script>
+
+</html>
